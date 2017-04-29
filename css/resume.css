@@ -1,0 +1,26 @@
+body {
+	font-family: Helvetica Neue;
+	/* font-family: Baskerville; */
+}
+
+#resume-main {
+	/* position: absolute; */
+}
+
+.resume-section {
+	/* position: absolute; */
+	/* display: inline; */
+	/* height: 100%; */
+}
+
+div.resume-left {
+	background-color: black;
+	color: white;
+	height: 100%;
+	min-height: 4rem;
+}
+
+.resume-left h4 {
+	display: inline;
+	vertical-align: top;
+}
