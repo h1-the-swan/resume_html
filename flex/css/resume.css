@@ -1,25 +1,77 @@
 body {
 	font-family: Helvetica Neue;
 	/* font-family: Baskerville; */
+	max-width: 960px;
+	align: center;
+	margin: auto;
 }
 
+#resume-main {
+	display: flex;
+	flex-direction: column;
+}
+
+.resume-section {
+	display: flex;
+	flex-flow: row wrap;
+	border-bottom: .25em solid white;
+}
 
 div.resume-left {
+	flex: 15%;
 	background-color: black;
 	color: white;
 	/* height: 100%; */
 	min-height: 4rem;
-	padding: 0;
+	margin: 0 1em;
 }
 
-/* .resume-left h4 { */
-/* 	display: inline; */
-/* 	vertical-align: top; */
-/* } */
+.resume-left > * {
+	/* display: inline; */
+	margin: 0 1em;
+}
 
-.resume-left-break {
-	height: 2rem;
-	width: 100%;
+.resume-section-break {
+	height: .5em;
 	background-color: white;
+}
+
+div.resume-right {
+	flex: 80%;
+}
+
+.resume-right > * {
+	/* display: inline; */
 	margin: 0;
+}
+
+.resume-section-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.resume-section-item {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: start;
+}
+
+.resume-section-item > * {
+	/* display: inline; */
+	margin: 0;
+}
+
+.resume-item-label {
+	flex: 90%;
+}
+
+.resume-date {
+	flex: 30%;
+	text-align: right;
+}
+
+.resume-section-item h5,
+.resume-section-item li,
+.resume-section-item p {
+	flex: 100%;
 }

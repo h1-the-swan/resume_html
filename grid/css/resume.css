@@ -1,0 +1,42 @@
+body {
+	font-family: Helvetica Neue;
+	/* font-family: Baskerville; */
+}
+
+#resume-main {
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+
+.resume-left {
+	grid-columns: 1;
+	background-color: black;
+	color: white;
+}
+
+.resume-right {
+	grid-columns: 2;
+}
+
+/*
+ 
+div.resume-left {
+	background-color: black;
+	color: white;
+	min-height: 4rem;
+	padding: 0;
+}
+
+.resume-left h4 {
+	display: inline;
+	vertical-align: top;
+}
+
+.resume-left-break {
+	height: 2rem;
+	width: 100%;
+	background-color: white;
+	margin: 0;
+}
+
+*/
