@@ -1,0 +1,28 @@
+/* #resume-main { */
+/* 	display: flex; */
+/* 	flex-direction: column; */
+/* } */
+
+.resume-section {
+	display: flex;
+	flex-direction: column;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.row-label {
+	flex: 1;
+}
+
+.row-content {
+	flex: 2;
+}
+
+@media all and ( min-width: 480px ) {
+	.resume-section {
+		flex-direction: row;
+	}
+}

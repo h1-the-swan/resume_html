@@ -1,0 +1,93 @@
+{
+	"Title": "Jason Portenoy",
+	"sections": {
+		"Contact": [
+			"jporteno@uw.edu",
+			"http://jasport.org",
+			"https://www.linkedin.com/in/jason-portenoy/"
+		],
+		"Education": [
+			{
+				"name": "Information Science PhD Program",
+				"dates": [
+					{"start": "September 2013", "end": "Present"}
+				],
+				"name2": "University of Washington School of Information",
+				"list": [
+					"Advised by Jevin West in the DataLab"
+				]
+			},
+			{
+				"name": "BS in Neuroscience",
+				"dates": [
+					{"start": "September 2004", "end": "May 2008"}
+				],
+				"name2": "Brown University",
+				"list": [
+					"Magna cum Laude, Phi Beta Kappa"
+				]
+			}
+		],
+		"Work Experience": [
+			{
+				"name": "University of Washington",
+				"dates": [
+					{"start": "September 2013", "end": "Present"}
+				],
+				"name2": "Teaching Assistant / Research Assistant",
+				"list": [
+					"Classes: Design Thinking, Information Systems Analysis and Management, Client Side Web Development, Capstone Project",
+					"Research Assistant for the Pew Charitable Trusts on projects assessing and visualizing scholarly impact",
+					"Research Assistant for JSTOR building tools to visualize and explore their archives of scholarly publications",
+					"Research Assistant for Pacific Northwest National Laboratory developing and analyzing algorithms for community detection in large networks"
+				]
+			},
+			{
+				"name": "eScience Institute at UW",
+				"dates": [
+					{"start": "June 2015", "end": "August 2015"}
+				],
+				"name2": "Data Science for Social Good Summer Fellow",
+				"list": [
+					"Worked with the Bill and Melinda Gates Foundation on a project identifying factors leading to family homelessness in the greater Seattle area",
+					"Built an interactive visualization tool to help government organizations better understand their data"
+				]
+			},
+			{
+				"name": "Cornish College of the Arts",
+				"dates": [
+					{"start": "February 2012", "end": "August 2013"}
+				],
+				"name2": "Data Coordinator — Admissions",
+				"list": [
+					"Oversaw Admissions data for the college's Microsoft SQL Server based student database",
+					"Maintained the integrity of data, ran reports, and analyzed data using Microsoft Access, Microsoft Excel, and Tableau",
+					"Automated processes using macros written in Visual Basic for Applications",
+					"Coordinated data flow between Admissions and other departments"
+				]
+			},
+			{
+				"name": "University of Washington Dept of Anesthesiology",
+				"dates": [
+					{"start": "February 2009", "end": "January 2011"},
+					{"start": "October 2011", "end": "February 2012"}
+				],
+				"name2": "Research Technologist",
+				"list": [
+					"Worked under Principal Investigator Gregory Terman MD, designing and running experiments, maintaining the lab, analyzing data, and contributing to writing papers"
+				]
+			},
+			{
+				"name": "Beth Israel Medical Center Dept of Radiation Oncology",
+				"dates": [
+					{"start": "March 2011", "end": "September 2011"}
+				],
+				"name2": "Research Analyst",
+				"list": [
+					"Managed and analyzed data sets for outcomes research on breast cancer populations",
+					"Wrote papers, abstracts, and posters"
+				]
+			}
+		]
+	}
+}
