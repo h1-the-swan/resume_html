@@ -3,16 +3,57 @@
 /* 	flex-direction: column; */
 /* } */
 
-.resume-section {
+.container {
+	margin: auto;
+	width: 100%;
+	max-width: 960px;
+}
+
+.row {
 	display: flex;
 	flex-direction: column;
+	/* flex-wrap: wrap; */
+	justify-content: space-between;
 }
 
-.resume-section-label {
+.row-nested {
+	/* flex-wrap: nowrap; */
+	/* justify-content: space-between; */
+	flex: 3;
+}
+
+.resume-section {
+	margin: 2em 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h3, h5, ul {
+	margin: 0;
+}
+
+.row-label {
 	flex: 1;
-	display: none;
 }
 
-.resume-section-content {
-	flex: 6;
+.row-content {
+	/* flex: 3 3 auto; */
+	flex: 3 3 100%;
+}
+
+.row-header {
+	flex: 1 1 50%;
+}
+
+.row-oneline {
+	flex: 1 1 100%;
+}
+
+@media all and ( min-width: 480px ) {
+	.row {
+		flex-direction: row;
+	}
 }
