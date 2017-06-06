@@ -3,69 +3,68 @@ function populateResume(data) {
 	var $container = $( '#resume-container' );
 	$( '#resume-title' ).append( $( '<h1>' ).text( data['Title'] ) );
 
-	function getSectionDiv(slug) {
-		return $( '<div id="resume-section-' + slug + '" class="resume-section row">');
-	}
-
-	function getLabelDiv(label, slug) {
-		var $div = $( '<div id="resume-' + slug + '-label" class="row-label">' );
-		$div.append( $( '<h3>' ).text(label) );
-		return $div;
-	}
-
-	function getContentDiv(slug) {
-		return $( '<div id="resume-' + slug + '-content" class="row-content">' );
-	}
-
-	var $resumeMain = $( '#resume-main' );
-
 	// Contact
 	var sectionName = 'Contact';
 	var slug = convertToSlug(sectionName);
 	var thisData = data.sections[sectionName];
-	var $sectionDiv = getSectionDiv(slug);
-	$sectionDiv.append( getLabelDiv(sectionName, slug) );
-	var $ul = $( '<ul>' );
+	var $section = $( '#resume-section-' + slug );
+	$section.find( '.row-label' ).html( $( '<h3>' ).text( sectionName ) );
+	var $content = $section.find( '.row-content' );
+	var $ul = $content.find( 'ul' );
 	for (var i = 0, len = thisData.length; i < len; i++) {
-		$ul.append( $( '<li>' ).text(thisData[i]));
+		$ul.append( $( '<li>' ).text( thisData[i] ) );
 	}
-	var $contentDiv = getContentDiv(slug);
-	$contentDiv.append( $ul );
-	$sectionDiv.append( $contentDiv );
-	console.log($sectionDiv);
-	$resumeMain.append( $sectionDiv );
 
-	function getItem(itemData, slug) {
-		var $contentDiv = getContentDiv(slug);
-		// $contentDiv.addClass( 'row-nested' );
-		// $contentDiv.addClass( 'row' );
-		var $name = $( '<div class="row-header">' );
-		$name.append( $( '<h3>' ).text( itemData.name ) );
-		$contentDiv.append( $name );
-
-		var $dates = $( '<div class="row-header">' );
-		for (var i = 0, len = itemData.dates.length; i < len; i++) {
-			$dates.append( $( '<h3>' ).text( itemData.dates[i].start + '—' + itemData.dates[i].end) );
+	function sectionWithItems(sectionName) {
+		var slug = convertToSlug(sectionName);
+		var thisData = data.sections[sectionName];
+		var $section = $( '#resume-section-' + slug );
+		$section.find( '.row-label' ).html( $( '<h3>' ).text( sectionName ) );
+		var $content = $section.find( '.row-content' );
+		var $itemTemplate = $content.find( '.item' );
+		for (var j = 0; j < thisData.length; j++) {
+			var itemData = thisData[j];
+			console.log(thisData.length);
+			var $item = $itemTemplate.clone();
+			$item.find( '.item-name' ).html( $( '<h3>' ).text( itemData['name'] ) );
+			$item.find( '.item-dates' ).html( '' );  // clear it
+			for (var i = 0, len = itemData['dates'].length; i < len; i++) {
+				var datesData = itemData['dates'][i]
+				var $date = $( '<h3>' ).text( datesData.start + ' — ' + datesData.end );
+				$item.find( '.item-dates' ).append( $date );
+			}
+			$item.find( '.item-name2' ).html( $( '<h5>' ).text( itemData['name2'] ) );
+			var $ul = $item.find( '.item-list ul' );
+			for (var i = 0, len = itemData['list'].length; i < len; i++) {
+				$ul.append( $( '<li>' ).text( itemData['list'][i] ) );
+			}
+			$content.append( $item );
 		}
-		$contentDiv.append( $dates );
-		$contentDiv.append( $( '<div class="row-oneline">' ).append( $('<h5>').text('pdfs')));
-		$contentDiv.append( $( '<div class="row-oneline">' ).append( $('<h5>').text('pdfs')));
-		return $contentDiv;
+		$itemTemplate.remove();
 	}
-	
+
 	// Education
 	var sectionName = 'Education';
-	var slug = convertToSlug(sectionName);
-	var thisData = data.sections[sectionName];
-	var $sectionDiv = getSectionDiv(slug);
-	$sectionDiv.append( getLabelDiv(sectionName, slug) );
-	// $sectionDiv.append( getItem(thisData[0], slug) );
-	$sectionDiv.append( $( '<div class="row row-nested right-side">' ) );
-	for (var i = 0, len = thisData.length; i < len; i++) {
-		$sectionDiv.find( '.right-side' ).append( getItem(thisData[i], slug) );
-	}
-	console.log($sectionDiv);
-	$resumeMain.append( $sectionDiv );
+	sectionWithItems(sectionName);
+
+	// Work Expreience
+	var sectionName = 'Work Experience';
+	sectionWithItems(sectionName);
+
+	//
+	// // Education
+	// var sectionName = 'Education';
+	// var slug = convertToSlug(sectionName);
+	// var thisData = data.sections[sectionName];
+	// var $sectionDiv = getSectionDiv(slug);
+	// $sectionDiv.append( getLabelDiv(sectionName, slug) );
+	// // $sectionDiv.append( getItem(thisData[0], slug) );
+	// $sectionDiv.append( $( '<div class="row row-nested right-side">' ) );
+	// for (var i = 0, len = thisData.length; i < len; i++) {
+	// 	$sectionDiv.find( '.right-side' ).append( getItem(thisData[i], slug) );
+	// }
+	// console.log($sectionDiv);
+	// $resumeMain.append( $sectionDiv );
 		
 }
 
