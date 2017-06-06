@@ -88,6 +88,11 @@
 					"Wrote papers, abstracts, and posters"
 				]
 			}
+		],
+		"Skills": [
+			"Python, R, SQL, JavaScript, D3, HTML, CSS, Git, Visual Basic for Applications",
+			"Network Analysis, Visualization, Machine Learning, Databases",
+			"Human languages: English, Spanish"
 		]
 	}
 }

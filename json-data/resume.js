@@ -52,20 +52,33 @@ function populateResume(data) {
 	sectionWithItems(sectionName);
 
 	// Publications
-	sectionName = 'Publications';
-	slug = convertToSlug(sectionName);
-	$section = $( '#resume-section-' + slug );
-	$section.find( '.row-label' ).html( $( '<h3>' ).text( sectionName ) );
-	var $content = $section.find( '.row-content' );
-	var $ul = $content.find( 'ul' );
 	$.getJSON('jp_publications.json',
 		function (publicationsData, textStatus, jqXHR) {
+			var sectionName = 'Publications';
+			var slug = convertToSlug(sectionName);
+			var $section = $( '#resume-section-' + slug );
+			$section.find( '.row-label' ).html( $( '<h3>' ).text( sectionName ) );
+			var $content = $section.find( '.row-content' );
+			var $ul = $content.find( 'ul' );
 			for (var i = 0, len = publicationsData.length; i < len; i++) {
 				var pubHtml = parseOnePublication(publicationsData[i]);
 				$ul.append( $( '<li>' ).html( pubHtml ) );
 			}
 		}
 	);
+	
+	// Skills
+	var sectionName = 'Skills';
+	var slug = convertToSlug(sectionName);
+	var thisData = data.sections[sectionName];
+	var $section = $( '#resume-section-' + slug );
+	$section.find( '.row-label' ).html( $( '<h3>' ).text( sectionName ) );
+	var $content = $section.find( '.row-content' );
+	var $ul = $content.find( 'ul' );
+	console.log(thisData);
+	for (var i = 0, len = thisData.length; i < len; i++) {
+		$ul.append( $( '<li>' ).text( thisData[i] ) );
+	}
 
 	//
 	// // Education
