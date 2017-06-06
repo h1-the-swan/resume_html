@@ -44,12 +44,28 @@ function populateResume(data) {
 	}
 
 	// Education
-	var sectionName = 'Education';
+	sectionName = 'Education';
 	sectionWithItems(sectionName);
 
 	// Work Expreience
-	var sectionName = 'Work Experience';
+	sectionName = 'Work Experience';
 	sectionWithItems(sectionName);
+
+	// Publications
+	sectionName = 'Publications';
+	slug = convertToSlug(sectionName);
+	$section = $( '#resume-section-' + slug );
+	$section.find( '.row-label' ).html( $( '<h3>' ).text( sectionName ) );
+	var $content = $section.find( '.row-content' );
+	var $ul = $content.find( 'ul' );
+	$.getJSON('jp_publications.json',
+		function (publicationsData, textStatus, jqXHR) {
+			for (var i = 0, len = publicationsData.length; i < len; i++) {
+				var pubHtml = parseOnePublication(publicationsData[i]);
+				$ul.append( $( '<li>' ).html( pubHtml ) );
+			}
+		}
+	);
 
 	//
 	// // Education
@@ -85,4 +101,34 @@ function convertToSlug(Text)
         .replace(/ /g,'-')
         .replace(/[^\w-]+/g,'')
         ;
+}
+
+// function getPublicationsFromJSON(publicationsData) {
+// 	console.log(publicationsData);
+// 	for (var i = 0, len = publicationsData.length; i < len; i++) {
+// 		var pubHtml = parseOnePublication(publicationsData[i]);
+// 		console.log(pubHtml)
+// 	}
+// }
+
+function parseOnePublication(pub) {
+	function wrapSpan(text, className) {
+		return '<span class="' + className + '">' + text + '</span>';
+	}
+	var authors = [];
+	for (var i = 0, len = pub.author.length; i < len; i++) {
+		var lastname = pub.author[i]['family'];
+		var initials = pub.author[i]['given'].split(" ").map(function(x) {return x[0];}).join("");
+		authors.push(lastname + " " + initials);
+	}
+	authors = authors.join(", ")
+	authors = wrapSpan(authors, 'pub-authors');
+	var title = pub.title;
+	title = wrapSpan(title, 'pub-title');
+	var venue = pub['container-title'];
+	venue = wrapSpan(venue, 'pub-venue');
+	var year = pub.issued['date-parts'][0][0];
+	year = wrapSpan(year, 'pub-year');
+	var pubHtml = authors + '. ' + title + '. ' + venue + ' (' + year + ').';
+	return pubHtml;
 }

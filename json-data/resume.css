@@ -22,12 +22,17 @@
 }
 
 .resume-section {
-	margin: 2em 0;
+	margin: 1em 0;
 }
 
 ul {
-	list-style: none;
+	/* list-style: none; */
+	list-style-position: inside;
 	padding: 0;
+}
+
+li:last-child {
+	margin-bottom: 1em;
 }
 
 h3, h5, ul {
@@ -48,6 +53,10 @@ h3, h5, ul {
 
 .row-oneline {
 	/* flex: 1 1 100%; */
+}
+
+.pub-venue {
+	font-style: italic;
 }
 
 @media all and ( min-width: 480px ) {

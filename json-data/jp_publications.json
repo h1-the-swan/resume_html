@@ -1,0 +1,402 @@
+[
+	{
+		"id": "http://zotero.org/users/2363881/items/73RBZRM5",
+		"type": "paper-conference",
+		"title": "Perspectives of Emerging Museum Professionals on the Role of Big Data in Museums",
+		"container-title": "Proceedings of the 48th Hawaii International Conference on System Sciences (HICSS)",
+		"source": "Google Scholar",
+		"event": "Hawai'i International Conference on System Sciences",
+		"URL": "http://conferences.computer.org/hicss/2015/papers/7367c075.pdf",
+		"DOI": "10.1109/HICSS.2015.249",
+		"author": [
+			{
+				"family": "Kinsley",
+				"given": "Rose Paquet"
+			},
+			{
+				"family": "Portenoy",
+				"given": "Jason"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					1
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2015",
+					4,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2363881/items/SJ7ZHCRU",
+		"type": "article-journal",
+		"title": "Leveraging Citation Networks to Visualize Scholarly Influence Over Time",
+		"container-title": "arXiv:1611.07135 [cs]",
+		"source": "arXiv.org",
+		"abstract": "Assessing the influence of a scholar's work is an important task for funding organizations, academic departments, and researchers. Common methods, such as measures of citation counts, can ignore much of the nuance and multidimensionality of scholarly influence. We present an approach for generating dynamic visualizations of scholars' careers. This approach uses an animated node-link diagram showing the citation network accumulated around the researcher over the course of the career in concert with key indicators, highlighting influence both within and across fields. We developed our design in collaboration with one funding organization---the Pew Biomedical Scholars program---but the methods are generalizable to visualizations of scholarly influence. We applied the design method to the Microsoft Academic Graph, which includes more than 120 million publications. We validate our abstractions throughout the process through collaboration with the Pew Biomedical Scholars program officers and summative evaluations with their scholars.",
+		"URL": "http://arxiv.org/abs/1611.07135",
+		"note": "arXiv: 1611.07135",
+		"author": [
+			{
+				"family": "Portenoy",
+				"given": "Jason"
+			},
+			{
+				"family": "Hullman",
+				"given": "Jessica"
+			},
+			{
+				"family": "West",
+				"given": "Jevin D."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					11,
+					21
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2017",
+					1,
+					18
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2363881/items/C5WHRJX4",
+		"type": "article-journal",
+		"title": "Prevalence and Characteristics of Chronic Pain in Patients Admitted to an Outpatient Drug and Alcohol Treatment Program",
+		"container-title": "Pain Medicine",
+		"page": "911-917",
+		"volume": "9",
+		"issue": "7",
+		"source": "Wiley Online Library",
+		"abstract": "Objectives.  To evaluate the prevalence, characteristics, and correlates of chronic pain in a population of predominantly employed, alcoholic patients attending an outpatient drug and alcohol treatment program. Methods.  A pain survey was administered to 79 patients attending an outpatient drug and alcohol treatment program situated in a suburban community outside of New York City. Chronic severe pain was defined as pain that 1) had persisted for at least 6 months; and 2) was either moderate to severe in intensity or significantly interfered with daily activities. Results.  Seventy-six percent of patients experienced pain during the past week. Chronic severe pain was experienced by 29.1% of patients. High levels of pain interference with physical and psychosocial functioning were reported by 26.1%. Patients with chronic severe pain were more likely to have significant comorbidity, to cite physical pain as the impetus for alcohol or drug abuse, to have abused a prescription drug or used an illicit drug to treat pain during the prior 3 months, and to have used illicitly obtained opioids. Only 13% of patients with chronic severe pain were currently receiving pain treatment and 72% expressed interest in receiving treatment. Discussion.  Chronic severe pain was prevalent in this predominantly employed, alcoholic population attending an outpatient drug and alcohol treatment program. Pain was associated with significant functional impairment, medical and psychiatric comorbidities, and abuse behaviors. Few patients accessed adequate pain treatment. Efforts should be made to better address the pain problems in this patient population.",
+		"URL": "http://onlinelibrary.wiley.com/doi/10.1111/j.1526-4637.2008.00420.x/abstract",
+		"DOI": "10.1111/j.1526-4637.2008.00420.x",
+		"ISSN": "1526-4637",
+		"note": "00054",
+		"language": "en",
+		"author": [
+			{
+				"family": "Sheu",
+				"given": "Robert"
+			},
+			{
+				"family": "Lussier",
+				"given": "David"
+			},
+			{
+				"family": "Rosenblum",
+				"given": "Andrew"
+			},
+			{
+				"family": "Fong",
+				"given": "Chunki"
+			},
+			{
+				"family": "Portenoy",
+				"given": "Jason"
+			},
+			{
+				"family": "Joseph",
+				"given": "Herman"
+			},
+			{
+				"family": "Portenoy",
+				"given": "Russell K."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008",
+					10,
+					1
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2017",
+					6,
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2363881/items/X42DWKWW",
+		"type": "article-journal",
+		"title": "Is There a Role for Postmastectomy Radiation Therapy in Ductal Carcinoma In Situ?",
+		"container-title": "International Journal of Surgical Oncology",
+		"page": "e423520",
+		"volume": "2012",
+		"source": "www.hindawi.com",
+		"abstract": "Background. DCIS treated by mastectomy ensures high local control rates. There is limited data on risk for relapse and lack of clear indication for adjuvant radiation therapy (RT). We report a retrospective review on a population of DCIS patients treated with mastectomy. The objective was to identify the overall incidence of relapse, risk factors for local recurrence, and accordingly for whom adjuvant postmastectomy RT may be considered. Methods. This is an IRB-approved retrospective study on a prospective breast cancer database. From 1997 to 2007, we identified 969 patients with diagnoses of DCIS, among them 211 breasts in 207 patients were treated with mastectomy and comprise the study group. Results. With a median followup of 55 months (4.6 years) the 10-year relapse-free survival is 97%. Two of 211 breasts (0.9%) treated with mastectomy developed a local-regional recurrence. Both the relapses were among patients defined as having <1 mm final mastectomy margin. Conclusions. The rare local relapse after mastectomy limits our ability to reliably identify risk factors for relapse. The consideration for postmastectomy RT should be based on an individualized risk evaluating surgical technique used, presence of BRCA mutation, grade and extent of tumor, and proximity of lesion to the margin of resection.",
+		"URL": "https://www.hindawi.com/journals/ijso/2012/423520/abs/",
+		"DOI": "10.1155/2012/423520",
+		"ISSN": "2090-1402",
+		"note": "00010",
+		"language": "en",
+		"author": [
+			{
+				"family": "Chadha",
+				"given": "Manjeet"
+			},
+			{
+				"family": "Portenoy",
+				"given": "Jason"
+			},
+			{
+				"family": "Boolbol",
+				"given": "Susan K."
+			},
+			{
+				"family": "Gillego",
+				"given": "Alyssa"
+			},
+			{
+				"family": "Harrison",
+				"given": "Louis B."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012",
+					6,
+					13
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2017",
+					6,
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2363881/items/CCQ4NFJ4",
+		"type": "article-journal",
+		"title": "Delineating Fields Using Mathematical Jargon",
+		"container-title": "BIRNDL 2016 Joint Workshop on Bibliometric-enhanced Information Retrieval and NLP for Digital Libraries",
+		"page": "14",
+		"volume": "13",
+		"source": "Google Scholar",
+		"URL": "http://www.aclweb.org/anthology/W/W16/W16-1508.pdf",
+		"note": "00002",
+		"author": [
+			{
+				"family": "West",
+				"given": "Jevin D."
+			},
+			{
+				"family": "Portenoy",
+				"given": "Jason"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2017",
+					6,
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2363881/items/2XPKUCCU",
+		"type": "paper-conference",
+		"title": "Visualizing Scholarly Publications and Citations to Enhance Author Profiles",
+		"container-title": "Proceedings of the 26th International Conference on World Wide Web Companion",
+		"collection-title": "WWW '17 Companion",
+		"publisher": "International World Wide Web Conferences Steering Committee",
+		"publisher-place": "Republic and Canton of Geneva, Switzerland",
+		"page": "1279–1282",
+		"source": "ACM Digital Library",
+		"event-place": "Republic and Canton of Geneva, Switzerland",
+		"abstract": "With data on scholarly publications becoming more abundant and accessible, there exist new opportunities for using this information to provide rich author profiles to display and explore scholarly work. We present a pair of linked visualizations connected to the Microsoft Academic Graph that can be used to explore the publications and citations of individual authors. We provide an online application with which a user can manage collections of papers and generate these visualizations.",
+		"URL": "https://doi.org/10.1145/3041021.3053058",
+		"DOI": "10.1145/3041021.3053058",
+		"ISBN": "978-1-4503-4914-7",
+		"note": "00001",
+		"author": [
+			{
+				"family": "Portenoy",
+				"given": "Jason"
+			},
+			{
+				"family": "West",
+				"given": "Jevin D."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2017",
+					6,
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2363881/items/HZI7DSJK",
+		"type": "chapter",
+		"title": "10 The Data Gold Rush in Higher Education",
+		"container-title": "Big Data Is Not a Monolith",
+		"publisher": "MIT Press",
+		"page": "129",
+		"source": "Google Scholar",
+		"URL": "http://books.google.com/books?hl=en&lr=&id=yp9SDQAAQBAJ&oi=fnd&pg=PA129&dq=info:7P73kWzXLg4J:scholar.google.com&ots=gpe9PnOC-_&sig=d_RPQbzzZFNnZEGciH_DgqJwCQk",
+		"note": "00000",
+		"author": [
+			{
+				"family": "West",
+				"given": "Jevin D."
+			},
+			{
+				"family": "Portenoy",
+				"given": "Jason"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2017",
+					6,
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2363881/items/24NWUWXU",
+		"type": "paper-conference",
+		"title": "Dynamic Visualization of Citation Networks Showing the Influence of Scholarly Fields over Time",
+		"container-title": "Semantics, Analytics, Visualization. Enhancing Scholarly Data",
+		"publisher": "Springer, Cham",
+		"page": "147-151",
+		"source": "link.springer.com",
+		"event": "International Workshop on Semantic, Analytics, Visualization",
+		"abstract": "Citation graphs between scholarly papers can be used to learn about the structure and development of scholarship. We present a generalizable approach to visualizing scholarly influence over time, using a dynamic node-link diagram representing the citation patterns between groups of papers. We combine this approach with hierarchical clustering techniques that exploit the network structure to partition the graph into clusters representing fields and subfields. We use these methods to explore the influence that fields have had on other fields over time.",
+		"URL": "https://link.springer.com/chapter/10.1007/978-3-319-53637-8_14",
+		"DOI": "10.1007/978-3-319-53637-8_14",
+		"note": "00000",
+		"language": "en",
+		"author": [
+			{
+				"family": "Portenoy",
+				"given": "Jason"
+			},
+			{
+				"family": "West",
+				"given": "Jevin D."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					4,
+					11
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2017",
+					6,
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2363881/items/AWNG6NQ6",
+		"type": "article-journal",
+		"title": "Hispanic Language Version of the Family Evaluation of Hospice Care",
+		"container-title": "Journal of pain and symptom management",
+		"page": "459-461",
+		"volume": "34",
+		"issue": "5",
+		"source": "PubMed Central",
+		"URL": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2692273/",
+		"DOI": "10.1016/j.jpainsymman.2007.08.003",
+		"ISSN": "0885-3924",
+		"note": "00002 \nPMID: 17919879\nPMCID: PMC2692273",
+		"journalAbbreviation": "J Pain Symptom Manage",
+		"author": [
+			{
+				"family": "Portenoy",
+				"given": "Jason"
+			},
+			{
+				"family": "Teno",
+				"given": "Joan M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2007",
+					11
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2017",
+					6,
+					6
+				]
+			]
+		}
+	}
+]
