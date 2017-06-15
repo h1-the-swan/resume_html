@@ -12,7 +12,12 @@ function populateResume(data) {
 	var $content = $section.find( '.row-content' );
 	var $ul = $content.find( 'ul' );
 	for (var i = 0, len = thisData.length; i < len; i++) {
-		$ul.append( $( '<li>' ).text( thisData[i] ) );
+		// $ul.append( $( '<li>' ).text( thisData[i] ) );
+		if (thisData[i].startsWith("http")) {
+			$ul.append( $( '<li>' ).html( '<a href="'+thisData[i]+'" target="_blank">'+thisData[i]+'</a>' ) );
+		} else {
+			$ul.append( $( '<li>' ).text( thisData[i] ) );
+		}
 	}
 
 	function sectionWithItems(sectionName) {
